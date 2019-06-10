@@ -12,10 +12,10 @@ public class MessagesConfig {
     private FileConfiguration cfg = YamlConfiguration.loadConfiguration(file);
 
     public void setMessage(){
-        if(cfg.contains("Settings")){
-            cfg.set("Settings.Prefix", "RoyalKingdom > ");
+        if(!cfg.contains("Settings")){
+            cfg.set("Settings.Prefix", "&bRoyalKingdom > ");
         }
-        if(cfg.contains("op")){
+        if(!cfg.contains("op")){
             cfg.set("OP.Message", "&cDazu hast du keine Rechte");
         }
         save();

@@ -12,13 +12,14 @@ public class OpCMD implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         cw = new ConfigWerte();
-        Player player = (Player) sender;
-        if(cmd.getName().equalsIgnoreCase("op")){
-            ConfigWerte.playerMessage(player, cw.Prefix + cw.OpMessage);
-
-        }
-
+        CommandSender c = (CommandSender) sender;
+        if(sender instanceof Player) {
+            Player player = (Player) sender;
+            if (cmd.getName().equalsIgnoreCase("op")) {
+                ConfigWerte.playerMessage(player, cw.Prefix + cw.OpMessage);
+            }
+        }else
+            ConfigWerte.consoleMessage(cw.Prefix + cw.OpMessage);
         return false;
     }
-
 }

@@ -16,7 +16,7 @@ public class ConfigWerte {
     //Settings
     public final String Prefix = Mcfg.getString("Settings.Prefix");
     //Op
-    public final String OpMessage = Mcfg.getString("Op.Message");
+    public final String OpMessage = Mcfg.getString("OP.Message");
 
 
     public static void playerMessage(Player player, String message){
