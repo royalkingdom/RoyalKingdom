@@ -1,8 +1,29 @@
 package net.royalkingdom.main;
 
-public class RoyalKingdom {
+import org.bukkit.plugin.java.JavaPlugin;
 
-    //Hi
-    //Hallo
+public class RoyalKingdom extends JavaPlugin {
 
+    @Override
+    public void onEnable() {
+        registerConfig();
+        registerCommands();
+        registerEvents();
+    }
+
+
+    private void registerConfig() {
+        getConfig().options().copyDefaults(true);
+        saveConfig();
+
+
+    }
+
+    private void registerCommands(){
+
+    }
+
+    private void registerEvents(){
+
+    }
 }
