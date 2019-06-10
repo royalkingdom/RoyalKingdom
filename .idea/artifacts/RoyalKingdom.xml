@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RoyalKingdom">
+    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <root id="archive" name="RoyalKingdom.jar">
+      <element id="module-output" name="RoyalKingdom" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/plugin.yml" />
+    </root>
+  </artifact>
+</component>

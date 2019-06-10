@@ -1,12 +1,12 @@
 package net.royalkingdom.main;
 
 import net.royalkingdom.commands.OpCMD;
-import net.royalkingdom.util.ConfigWerte;
+import net.royalkingdom.util.MessagesConfig;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RoyalKingdom extends JavaPlugin {
 
-    private ConfigWerte cw;
+    private MessagesConfig mc;
 
     @Override
     public void onEnable() {
@@ -20,6 +20,8 @@ public class RoyalKingdom extends JavaPlugin {
         getConfig().options().copyDefaults(true);
         saveConfig();
         registerCommands();
+        mc = new MessagesConfig();
+        mc.setMessage();
     }
 
     private void registerCommands(){
