@@ -13,8 +13,10 @@ public class ConfigWerte {
     private File file = new File("plugins//RoyaKingdom//Messages.yml");
     private FileConfiguration Mcfg = YamlConfiguration.loadConfiguration(file);
 
-    //Setting
+    //Settings
     public final String Prefix = Mcfg.getString("Settings.Prefix");
+    //Op
+    public final String OpMessage = Mcfg.getString("Op.Message");
 
 
     public static void playerMessage(Player player, String message){

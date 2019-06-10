@@ -1,0 +1,6 @@
+name: RoylaKingdom
+version: 1.0
+main: net.royalkingdom.main.RoyalKingdom
+author: Ayley, TLPH1
+commands:
+  -op

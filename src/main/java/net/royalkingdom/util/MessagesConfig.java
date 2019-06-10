@@ -15,6 +15,9 @@ public class MessagesConfig {
         if(cfg.contains("Settings")){
             cfg.set("Settings.Prefix", "RoyalKingdom > ");
         }
+        if(cfg.contains("op")){
+            cfg.set("OP.Message", "&cDazu hast du keine Rechte");
+        }
         save();
     }
 
